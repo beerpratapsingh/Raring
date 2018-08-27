@@ -7,30 +7,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">   
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="main.js"></script>
 </head>
 <body>
-  <div class="star-rating">
-    <fieldset>
-      <input type="radio" id="rating5" name="rating" value="5" />
-      <label for="rating5" title="Outstanding"></label>
+  <div class="container">
+    <div class="col-md-6">
+      <form>
+        <div class="form-group text-left">
+          <label for="reviewerName">Reviewer</label>
+          <input type="text" class="form-control" id="reviewerName" placeholder="Enter Name">          
+        </div>
+        <div class="form-group text-left">
+          <label for="reviewerTitle">Title</label>
+          <input type="text" class="form-control" id="reviewerTitle" placeholder="Enter Title">
+        </div>
+        <div class="form-group text-left">
+          <label for="pros">Pros</label>
+          <textarea class="form-control" id="pros"></textarea>
+        </div>
+        <div class="form-group text-left">
+          <label for="cons">Cons</label>
+          <textarea class="form-control" id="cons"></textarea>
+        </div>
+        <div class="form-group text-left">
+          <label for="comments">Comments</label>
+          <textarea class="form-control" id="comments" rows="7"></textarea>
+        </div>
+        <div class="form-group text-left">
+          <p>Would you recommend this product?</p>
+          <div class="radio">
+            <label><input type="radio" name="optradio" checked>Product 1</label>
+          </div>
+          <div class="radio">
+            <label><input type="radio" name="optradio">Product 2</label>
+          </div>
+          <div class="radio">
+            <label><input type="radio" name="optradio">Product 3</label>
+          </div>
+        </div>
+        <!-- <div class="form-check text-left">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div> -->
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+    <div class="col-md-6">
+      <div class="star-rating">
+        <h3>Rate Us</h3>
+        <fieldset>
+          <input type="radio" id="rating5" name="rating" value="5" />
+          <label for="rating5" title="Outstanding"></label>
+    
+          <input type="radio" id="rating4" name="rating" value="4" />
+          <label for="rating4" title="Very Good"></label>
+    
+          <input type="radio" id="rating3" name="rating" value="3" />
+          <label for="rating3" title="Good"></label>
+    
+          <input type="radio" id="rating2" name="rating" value="2" />
+          <label for="rating2" title="Poor"></label>
+    
+          <input type="radio" id="rating1" name="rating" value="1" />
+          <label for="rating1" title="Very Poor"></label>
+    
+        </fieldset>
+      </div>      
+      <h1 id="ratingStatus"></h1>
+    </div>
+  </div>
 
-      <input type="radio" id="rating4" name="rating" value="4" />
-      <label for="rating4" title="Very Good"></label>
-
-      <input type="radio" id="rating3" name="rating" value="3" />
-      <label for="rating3" title="Good"></label>
-
-      <input type="radio" id="rating2" name="rating" value="2" />
-      <label for="rating2" title="Poor"></label>
-
-      <input type="radio" id="rating1" name="rating" value="1" />
-      <label for="rating1" title="Very Poor"></label>
-
-    </fieldset>
-  </div>      
-
-  <h1 id="ratingStatus"></h1>
 </body>
 </html>

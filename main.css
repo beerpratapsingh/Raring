@@ -9,7 +9,7 @@ h1{color: #0ab775}
 .star-rating {font-family: 'FontAwesome';}
 .star-rating > fieldset {border: none; display: inline-block;}
 .star-rating > fieldset:not(:checked) > input {position: absolute; top: -9999px; clip: rect(0, 0, 0, 0);}
-.star-rating > fieldset:not(:checked) > label {float: right; width: 1em; cursor: pointer; font-size: 42px; color: #0ab775;}
+.star-rating > fieldset:not(:checked) > label {float: right; color: #0ab775; font-size: 36px; font-weight: normal; cursor: pointer;}
 .star-rating > fieldset label{margin: 0 5px}
 .star-rating > fieldset:not(:checked) > label:before {content: '\f006  ';}
 .star-rating > fieldset:not(:checked) > label:hover,
